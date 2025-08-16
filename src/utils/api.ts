@@ -1,6 +1,6 @@
 import { CreditRiskRequest, CreditRiskResponse } from '@/types/api';
 
-const API_URL = 'https://home-credit-api-production.up.railway.app/';
+const API_URL = 'https://home-credit-api-production.up.railway.app/predict';
 
 export async function predictCreditRisk(request: CreditRiskRequest): Promise<CreditRiskResponse> {
   try {
