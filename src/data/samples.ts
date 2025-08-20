@@ -1,5 +1,6 @@
 import { CreditRiskData } from '@/types/api';
 
+
 export const positiveSample: CreditRiskData = {
   amtinstpaidbefduel24m_4187115A: 0.0639748277364464,
   annuity_780A: 0.0723912054344998,
