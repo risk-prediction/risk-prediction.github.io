@@ -160,18 +160,18 @@ export default function CreditRiskForm() {
         <Button 
           variant="outline" 
           onClick={() => handleLoadSample('positive')}
-          className="bg-success/10 border-success/30 hover:bg-success/20"
+          className="bg-destructive/10 border-destructive/30 hover:bg-destructive/20"
         >
           <TrendingUp className="mr-2 h-4 w-4" />
-          Load Positive Sample
+          Load High-Risk Sample
         </Button>
         <Button 
           variant="outline" 
           onClick={() => handleLoadSample('negative')}
-          className="bg-destructive/10 border-destructive/30 hover:bg-destructive/20"
+          className="bg-success/10 border-success/30 hover:bg-success/20"
         >
           <TrendingDown className="mr-2 h-4 w-4" />
-          Load Negative Sample
+          Load Low-Risk Sample
         </Button>
       </div>
 
@@ -291,10 +291,10 @@ export default function CreditRiskForm() {
             </CardHeader>
             <CardContent className="space-y-3 text-sm">
               <div>
-                <strong>Positive Sample:</strong> Low-risk customer with good payment history and stable income.
+                <strong>High-Risk Sample:</strong> High-risk customer with payment issues and high debt ratios.
               </div>
               <div>
-                <strong>Negative Sample:</strong> High-risk customer with payment issues and high debt ratios.
+                <strong>Low-Risk Sample:</strong> Low-risk customer with good payment history and stable income.
               </div>
               <div>
                 <strong>Threshold:</strong> Adjust the risk threshold to change sensitivity of the model.
